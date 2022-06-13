@@ -1,0 +1,549 @@
+@import "~antd/dist/antd.css";
+
+.TicketListEvent-Component {
+    box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
+    .trigger {
+        padding: 0 24px;
+        font-size: 18px;
+        line-height: 64px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .trigger:hover {
+        color: #1890ff;
+    }
+
+    .site-layout .site-layout-background {
+        background: #fff;
+    }
+
+    .ant-layout {
+        min-height: 1080px;
+        max-height: 1080px;
+
+        .ant-layout-sider {
+            background: rgb(249, 246, 244) !important;
+            flex: 0 0 321px !important;
+            max-width: 321px !important;
+            min-width: auto !important;
+            width: 100% !important;
+            padding: 17px 36px 31px 33px;
+        }
+
+        .right-content {
+            padding-right: 32px;
+            background: rgb(249, 246, 244) !important;
+            .TicketListEvent-content {
+                padding: 24px;
+                background: #ffffff;
+                border-radius: 24px;
+                height: 100%;
+                max-height: 963px;
+
+                h2 {
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 54px;
+                    color: #1e0d03;
+                    margin-bottom: 28px;
+                }
+
+                .Ticket-filter {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 7.871%;
+                    padding-top: 17px;
+                    padding-bottom: 20px;
+
+                    .left-filter {
+                        .ant-space {
+                            .ant-space-item {
+                                .ant-input-affix-wrapper {
+                                    border-radius: 8px;
+                                    width: 437px;
+                                    height: 48px;
+                                    background-color: #f7f7f8;
+                                    border: none;
+
+                                    input {
+                                        background-color: transparent;
+                                        font-family: "Montserrat";
+                                        font-style: italic;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                    }
+
+                                    &:focus {
+                                        border: 1px solid #ffb800;
+                                        border-radius: 12px;
+                                    }
+
+                                    &::after {
+                                        border: 1px solid #ffb800;
+                                        border-radius: 12px;
+                                    }
+
+                                    &:checked {
+                                        border: 1px solid #ffb800;
+                                        border-radius: 12px;
+                                    }
+
+                                    &:hover {
+                                        border: 1px solid #ffb800;
+                                        border-radius: 12px;
+                                    }
+                                    &-selected {
+                                        border: 1px solid #ffb800;
+                                        border-radius: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .right-profile {
+                        width: 40%;
+                        display: flex;
+                        justify-content: end;
+
+                        .fill-check {
+                            width: 100%;
+                            max-width: 127px;
+                            border: 1px solid #ff993c;
+                            border-radius: 6px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 48px;
+                            margin-right: 10px;
+                            box-shadow: inset 0 0 0 0 #ff993c;
+                            transition: ease-out 0.3s;
+
+                            svg {
+                                margin-right: 10px;
+                            }
+
+                            span {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 26px;
+                                color: #ff993c;
+                            }
+
+                            &:hover {
+                                box-shadow: inset 127px 0 0 0 #ff993c;
+
+                                svg {
+                                    path {
+                                        stroke: #fff;
+                                    }
+                                }
+
+                                span {
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        .down-file {
+                            width: 100%;
+                            max-width: 181px;
+                            border: 1px solid #ff993c;
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 48px;
+                            box-shadow: inset 0 0 0 0 #ff993c;
+                            transition: ease-out 0.3s;
+
+                            span {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 26px;
+                                color: #ff993c;
+                            }
+
+                            &:hover {
+                                box-shadow: inset 181px 0 0 0 #ff993c;
+
+                                span {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .number-details {
+                    margin-top: 26px;
+                    border-radius: 12px;
+
+                    .ant-table-wrapper {
+                        .ant-spin-nested-loading {
+                            .ant-spin-container {
+                                .ant-table {
+                                    border-radius: 12px;
+                                    max-height: 624px;
+                                    min-height: 624px;
+                                    .ant-table-container {
+                                        border-radius: 12px;
+                                        max-height: 624px;
+
+                                        .ant-table-content {
+                                            max-height: 624px;
+                                            border-radius: 12px;
+                                            & > table {
+                                                border-radius: 12px !important;
+                                            }
+                                            table {
+                                                max-height: 624px;
+                                                border-radius: 12px;
+                                                max-height: 624px;
+
+                                                colgroup {
+                                                    max-height: 624px;
+                                                }
+                                                .ant-table-thead {
+                                                    border-radius: 12px 12px 0 0;
+                                                    max-height: 49px;
+                                                    & > tr > th {
+                                                        max-height: 49px;
+                                                        padding: 12px;
+                                                    }
+                                                    tr {
+                                                        max-height: 49px;
+                                                        .stt-one {
+                                                            background-color: #f1f4f8;
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 16px;
+                                                            line-height: 26px;
+                                                            color: #1e0d03;
+                                                            border-radius: 8px 0 0 0;
+                                                            width: 8%;
+                                                            text-align: center;
+                                                        }
+
+                                                        .stt-two {
+                                                            background-color: #f1f4f8;
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 16px;
+                                                            line-height: 26px;
+                                                            color: #1e0d03;
+                                                            width: 10%;
+                                                        }
+
+                                                        .stt-three {
+                                                            background-color: #f1f4f8;
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 16px;
+                                                            line-height: 26px;
+                                                            color: #1e0d03;
+                                                            width: 11%;
+                                                        }
+
+                                                        .stt-four {
+                                                            background-color: #f1f4f8;
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 16px;
+                                                            line-height: 26px;
+                                                            color: #1e0d03;
+                                                            width: 13%;
+                                                        }
+
+                                                        .stt-five {
+                                                            background-color: #f1f4f8;
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 16px;
+                                                            line-height: 26px;
+                                                            color: #1e0d03;
+                                                            width: 10%;
+                                                            text-align: right;
+                                                        }
+
+                                                        .stt {
+                                                            background-color: #f1f4f8;
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 16px;
+                                                            line-height: 26px;
+                                                            color: #1e0d03;
+                                                        }
+
+                                                        .stt-six {
+                                                            background-color: #f1f4f8;
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 16px;
+                                                            line-height: 26px;
+                                                            color: #1e0d03;
+                                                            width: 11%;
+                                                            text-align: right;
+                                                        }
+
+                                                        .stt-seven {
+                                                            background-color: #f1f4f8;
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 16px;
+                                                            line-height: 26px;
+                                                            color: #1e0d03;
+                                                            width: 19%;
+                                                            // text-align: right;
+                                                        }
+
+                                                        .stt-final {
+                                                            background-color: #f1f4f8;
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 600;
+                                                            font-size: 16px;
+                                                            line-height: 26px;
+                                                            color: #1e0d03;
+                                                            border-radius: 0 8px 0 0;
+                                                            padding-left: 50px;
+                                                        }
+                                                    }
+                                                }
+
+                                                tbody.ant-table-tbody {
+                                                    max-height: 441px !important ;
+                                                    border-radius: 0 0 12px 12px;
+                                                    & > tr > td {
+                                                        max-height: 48px;
+                                                        padding: 8px 13.5px;
+                                                    }
+
+                                                    .table-row-dark {
+                                                        background-color: #f7f8fb !important;
+                                                    }
+
+                                                    & > tr > td.stt-six {
+                                                        max-height: 48px;
+                                                        padding: 0px 13.5px;
+                                                    }
+                                                    tr.ant-table-row {
+                                                        td.ant-table-cell {
+                                                            font-family: "Montserrat";
+                                                            font-style: normal;
+                                                            font-weight: 500;
+                                                            font-size: 14px;
+                                                            line-height: 22px;
+                                                            color: #1e0d03;
+                                                            opacity: 0.7;
+
+                                                            .da-su-dung {
+                                                                width: 100%;
+                                                                max-width: 111px;
+                                                                height: 31px;
+                                                                background: #eaf1f8;
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                border: 1px solid #919dba;
+                                                                border-radius: 4px;
+                                                                font-family: "Montserrat";
+                                                                font-style: normal;
+                                                                font-weight: 500;
+                                                                font-size: 12px;
+                                                                line-height: 15px;
+                                                                color: #919dba;
+                                                                svg {
+                                                                    margin-right: 8px;
+                                                                }
+                                                            }
+
+                                                            .chua-su-dung {
+                                                                width: 100%;
+                                                                max-width: 126px;
+                                                                height: 31px;
+                                                                background: #def7e0;
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                border: 1px solid #03ac00;
+                                                                border-radius: 4px;
+                                                                font-family: "Montserrat";
+                                                                font-style: normal;
+                                                                font-weight: 500;
+                                                                font-size: 12px;
+                                                                line-height: 15px;
+                                                                color: #03ac00;
+                                                                svg {
+                                                                    margin-right: 8px;
+                                                                    circle {
+                                                                        fill: #03ac00;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .het-han {
+                                                                width: 100%;
+                                                                max-width: 89px;
+                                                                height: 31px;
+                                                                background: #f8ebe8;
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                border: 1px solid #fd5959;
+                                                                border-radius: 4px;
+                                                                font-family: "Montserrat";
+                                                                font-style: normal;
+                                                                font-weight: 500;
+                                                                font-size: 12px;
+                                                                line-height: 15px;
+                                                                color: #fd5959;
+                                                                svg {
+                                                                    margin-right: 8px;
+                                                                    circle {
+                                                                        fill: #fd5959;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+
+                                                        td.stt-six {
+                                                            text-align: right;
+                                                        }
+
+                                                        td.stt-one {
+                                                            text-align: center;
+                                                        }
+
+                                                        td.stt-five {
+                                                            text-align: right;
+                                                            cursor: pointer;
+                                                            &:hover{
+                                                                color: #fd5959;
+                                                            }
+                                                        }
+
+                                                        td.stt-link {
+                                                            a {
+                                                                text-decoration: underline;
+                                                            }
+                                                        }
+
+                                                        td.stt-final {
+                                                            padding-left: 50px;
+                                                            a {
+                                                                text-decoration: underline;
+                                                            }
+                                                        }
+                                                    }
+                                                    tr:last-child {
+                                                        border-radius: 0 0 12px 12px;
+                                                        td:last-child {
+                                                            border-radius: 0 0 12px 0;
+                                                        }
+
+                                                        td:first-child {
+                                                            border-radius: 0 0 0 12px;
+                                                        }
+                                                    }
+
+                                                    .table-row-dark {
+                                                        background-color: #fff2e7;
+                                                    }
+                                                }
+                                                & > tbody {
+                                                    border-top-left-radius: 15px !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .ant-pagination {
+                                    margin-top: 50px;
+                                    justify-content: center;
+
+                                    .ant-pagination-item {
+                                        background: none;
+                                        border: none;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        a {
+                                            font-family: "Montserrat";
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 17px;
+                                            color: #7e7d88;
+                                        }
+                                    }
+                                    .ant-pagination-item-active {
+                                        background: transparent;
+                                        border-radius: 4px;
+                                        border: 1px solid #ff993c;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        a {
+                                            font-family: "Montserrat";
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 17px;
+                                            color: #ff993c;
+                                        }
+                                    }
+
+                                    .ant-pagination-next {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: start;
+                                        span {
+                                            svg {
+                                                color: #ff993c;
+                                            }
+                                        }
+                                    }
+
+                                    .ant-pagination-prev {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: end;
+                                        span {
+                                            svg {
+                                                color: #ff993c;
+                                            }
+                                        }
+                                    }
+
+                                    .ant-pagination-disabled {
+                                        span {
+                                            svg {
+                                                color: #a5a8b1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

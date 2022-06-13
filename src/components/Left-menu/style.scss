@@ -1,0 +1,206 @@
+.ant-layout-sider {
+    background-color: rgb(249, 246, 244);
+
+    .ant-layout-sider-children {
+        .logo {
+            background: url("../../../public/images/LeftMenu/logo-insight.png");
+            background-size: 44%;
+            background-repeat: no-repeat;
+            height: 12.409%;
+        }
+
+        .ant-menu {
+            height: 86%;
+            border: none;
+            background: rgb(249, 246, 244);
+            .ant-menu-submenu {
+                height: 56px;
+                display: flex;
+                border-radius: 8px;
+
+                .ant-menu-submenu-title {
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    padding: 15px 0 0 27px;
+                    svg {
+                        margin-right: 12px;
+                    }
+                    .-title-content {
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: rgb(117, 106, 100);
+                    }
+                    .ant-menu-submenu-arrow {
+                        display: none;
+                    }
+
+                    svg path {
+                        stroke: none;
+                    }
+                }
+
+                &-active {
+                    background-color: #ffb800;
+                    .ant-menu-submenu-title {
+                        span.-title-content {
+                            color: #ffffff;
+                            font-weight: 700;
+                        }
+
+                        svg path {
+                            fill: #ffffff;
+                        }
+
+                        .ant-menu-submenu-arrow {
+                            color: #ffffff;
+                        }
+                    }
+                }
+                &:hover {
+                    background-color: #fae9bfc2;
+                    .ant-menu-submenu-title {
+                        span.-title-content {
+                            color: #ffb800;
+                            font-weight: 700;
+                        }
+
+                        svg path {
+                            fill: #ffb800;
+                        }
+
+                        .ant-menu-submenu-arrow {
+                            color: #ffb800;
+                        }
+                    }
+                }
+                &-selected {
+                    background-color: #ffb800;
+                    .ant-menu-submenu-title {
+                        span.-title-content {
+                            color: #ffffff;
+                            font-weight: 700;
+                        }
+
+                        svg path {
+                            fill: #ffffff;
+                            stroke: #ffffff;
+                        }
+
+                        .ant-menu-submenu-arrow {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .Setting.ant-menu-submenu {
+                .ant-menu-submenu-title {
+                    .ant-menu-submenu-arrow {
+                        display: none;
+                    }
+                }
+
+                &-active {
+                    .ant-menu-submenu-title {
+                        span.-title-content {
+                            font-weight: 500;
+                            color: rgb(126, 125, 136);
+                        }
+
+                        svg path {
+                            stroke: rgb(126, 125, 136);
+                            fill: rgb(126, 125, 136);
+                        }
+                    }
+                }
+                &:hover {
+                    background: transparent;
+                    .ant-menu-submenu-title {
+                        span.-title-content {
+                            color: rgb(126, 125, 136);
+                        }
+                    }
+                }
+                &-selected {
+                    .ant-menu-submenu-title {
+                        span.-title-content {
+                            color: rgb(126, 125, 136);
+                        }
+
+                        svg path {
+                            stroke: rgb(126, 125, 136);
+                        }
+                    }
+                }
+            }
+
+            .service-park.ant-menu-submenu {
+                .ant-menu-submenu-title {
+                    padding: 15px 0 0 80px;
+                }
+            }
+        }
+        .ant-menu-light .ant-menu-item:hover,
+        .ant-menu-light .ant-menu-item-active,
+        .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+        .ant-menu-light .ant-menu-submenu-active,
+        .ant-menu-light .ant-menu-submenu-title:hover {
+            color: #ffb800;
+        }
+
+        .Logout {
+            height: 48%;
+            display: flex;
+            align-items: end;
+
+            .ant-menu-submenu {
+                width: 100%;
+                border-radius: 8px;
+                margin: 0 12px;
+
+                &::after {
+                    border: none;
+                }
+                .ant-menu-submenu-title {
+                    .ant-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 8px;
+                    }
+
+                    span.-title-content {
+                        font-family: "Nunito";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #ff7506;
+                    }
+                }
+            }
+        }
+
+        p.copy-right {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: rgb(139, 129, 124);
+        }
+    }
+
+    .ant-layout-sider-zero-width-trigger {
+        background: #ffb800;
+    }
+}
+
+.ant-menu-submenu-popup {
+    display: none;
+}

@@ -1,0 +1,41 @@
+
+// REALTIME DATABASE FIREBASE
+
+import { onValue, ref} from '@firebase/database';
+dbrealtime
+
+useEffect(() => {
+        onValue(ref(dbrealtime), (snapshot: any) => {
+            const data = snapshot.val();
+            if (data !== null) {
+                Object.values(data).map((todo: any) => (
+                    setDataUserLog((oldArray) => [...oldArray, todo])
+                ))
+            }
+        })
+    }, [])
+
+
+Create:
+    set(ref(dbrealtime, `datareact/Roles/${ss}`), {
+        id: "1"
+    }).then(() => {
+        alert('data create!');
+    })
+    .catch((error) => {
+        alert(error);
+    });
+Update:
+    update(ref(dbrealtime, `datareact/Roles/${ss}`), {
+        id: "1"
+    }).then(() => {
+        alert('data update!');
+    })
+    .catch((error) => {
+        alert(error);
+    });
+Remove:
+    function deleteData () {
+        remove(ref(db, 'users/' + username));
+        alert('removed');
+    }

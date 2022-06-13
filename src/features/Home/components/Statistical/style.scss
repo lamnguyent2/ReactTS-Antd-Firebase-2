@@ -1,0 +1,191 @@
+@import "~antd/dist/antd.css";
+
+.home-Component {
+    box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
+    .trigger {
+        padding: 0 24px;
+        font-size: 18px;
+        line-height: 64px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .trigger:hover {
+        color: #1890ff;
+    }
+
+    .site-layout .site-layout-background {
+        background: #fff;
+    }
+
+    .ant-layout {
+        min-height: 1080px;
+        max-height: 1080px;
+
+        .ant-layout-sider {
+            background: rgb(249, 246, 244) !important;
+            flex: 0 0 321px !important;
+            max-width: 321px !important;
+            min-width: auto !important;
+            width: 100% !important;
+            padding: 17px 36px 31px 33px;
+        }
+
+        .right-content {
+            padding-right: 32px;
+            background: rgb(249, 246, 244) !important;
+
+            .Statistical-content {
+                padding: 24px;
+                background: #ffffff;
+                border-radius: 24px;
+                height: 100%;
+                max-height: 963px;
+
+                h2 {
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 54px;
+                    color: #1e0d03;
+                    margin-bottom: 32px;
+                }
+
+                .title-date {
+                    display: flex;
+                    justify-content: space-between;
+                    h3 {
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: #1e0d03;
+                        margin-bottom: 26px;
+                    }
+
+                    .ant-picker {
+                        width: 155px;
+                        height: 40px;
+                        padding-right: 5px;
+                        padding-left: 10px;
+                        border-radius: 4px;
+
+                        .ant-picker-input {
+                            input {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 22px;
+
+                                &::placeholder {
+                                    color: #1e0d03;
+                                    opacity: 0.78;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .total-revenue-by-week {
+                    margin-top: 38px;
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #958e88;
+                    margin-bottom: 5px;
+                }
+
+                .total-money {
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: #1e0d03;
+
+                    span {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+
+                .chart-pie {
+                    display: flex;
+                    margin-top: 80px;
+
+                    .left-date {
+                        .ant-picker {
+                            width: 155px;
+                            height: 40px;
+                            padding-right: 5px;
+                            padding-left: 10px;
+                            border-radius: 4px;
+
+                            .ant-picker-input {
+                                input {
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 22px;
+
+                                    &::placeholder {
+                                        color: #1e0d03;
+                                        opacity: 0.78;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .right-chart {
+                        width: 100%;
+                        height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        .g2-html-annotation {
+                            display: none !important;
+                        }
+                        .title-chart {
+                            width: 85%;
+                            display: flex;
+                            justify-content: space-around;
+                            .chart-one {
+                                margin-left: -48px;
+                                h3 {
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #1e0d03;
+                                }
+                            }
+                            .chart-two {
+                                h3 {
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #1e0d03;
+                                }
+                            }
+                        }
+
+                        .charts{
+                            width: 90%;
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

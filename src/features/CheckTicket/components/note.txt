@@ -1,0 +1,22 @@
+const sttauto = (Math.max.apply(Math, dataTicket[1]?.TicketChecks.map(function (o: any) { return o.STT; })));
+    const stts = sttauto+1 ;
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+        set(ref(dbrealtime, `ticket/TicketChecks/${sttauto}`), {
+            STT: stts,
+            number: "227634952014",
+            event: "Hội chợ triển lãm tiêu dùng 2021",
+            useddate: "14/04/2021",
+            type: "Vé cổng",
+            checkinport: "Cổng 1",
+            status: {name: "Chưa đối soát", classstatus: "chua-doi-soat"}
+        }).then(() => {
+            console.log("ok");
+            window.location.reload();
+        })
+            .catch((error) => {
+                alert(error);
+            });
+
+    };
